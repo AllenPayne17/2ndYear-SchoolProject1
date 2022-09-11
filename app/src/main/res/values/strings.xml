@@ -54,5 +54,9 @@
     <string name="mybutton">Button</string>
     <string name="enter_name">enter name</string>
     <string name="enter_section">enter section</string>
+    <string name="firebase_crud_test">Firebase Crud Test</string>
+    <string name="enter_full_name">Enter full Name</string>
+    <string name="yourtrulyname">name</string>
+    <string name="butttton">Button</string>
 
 </resources>
