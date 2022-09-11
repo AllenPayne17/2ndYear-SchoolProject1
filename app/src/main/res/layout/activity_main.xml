@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#3A3A3A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/logo"
+            app:srcCompat="?android:attr/fingerprintAuthDrawable"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvLogoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYNE"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bntCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calculatorActivity"
+                android:paddingRight="20dp"
+                android:text="Basic Math"
+                app:backgroundTint="#737171" />
+
+            <Button
+                android:id="@+id/bntString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stringManipulationActivity"
+                android:text="String Manipulation"
+                app:backgroundTint="#737171" />
+
+            <Button
+                android:id="@+id/bntDemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="layoutDemoActivity"
+                android:text="layout demo"
+                app:backgroundTint="#737171" />
+
+            <Button
+                android:id="@+id/bntCrud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firebaseCrudActivity"
+                android:text="firebase crud"
+                app:backgroundTint="#737171" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="aboutMeActivity"
+                android:text="about me"
+                app:backgroundTint="#737171" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

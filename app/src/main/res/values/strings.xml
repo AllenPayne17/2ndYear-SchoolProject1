@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">multiActivity</string>
+    <string name="logo">logo</string>
+
+    <string name="num1label">Enter First number</string>
+    <string name="num2label">Enter Second number</string>
+    <string name="btnLabel">compute</string>
+    <string name="sum">SUM</string>
+    <string name="difference">DIFFERENCE</string>
+    <string name="product">PRODUCT</string>
+    <string name="quotient">QUOTIENT</string>
+    <string name="sumvalue">Sum Here…</string>
+    <string name="differencevalue">Difference Here…</string>
+    <string name="productvalue">Product Here…</string>
+    <string name="quotientvalue">Quotient Here…</string>
+
+    <string name="button">Button</string>
+    <string name="enteredText">Type Here…</string>
+    <string name="manipulate">manipulate</string>
+    <string name="_2_1">2.1</string>
+    <string name="_2_2">2.2</string>
+    <string name="_2_3">2.3</string>
+    <string name="txtCons">value here…</string>
+    <string name="txtUpperCase">value here…</string>
+    <string name="totalVowels">value here…</string>
+
+    <string name="name">Enter your name</string>
+    <string name="gender">Gender :</string>
+    <string name="data_stracture">Data Stracture</string>
+    <string name="textId">Some text here..</string>
+    <string name="textName">Some text here..</string>
+    <string name="Btnview_info">View Information</string>
+    <string name="programming_1">Programming 1</string>
+    <string name="web_developer">Web Developer</string>
+    <string name="cdbweb_developer">Web Developer</string>
+    <string name="textCourse">Some text here..</string>
+    <string name="choose_your_subjects">Choose your subjects :</string>
+    <string name="enterYear">Enter year</string>
+    <string name="enter_id">Enter ID #</string>
+    <string name="enter_course">Enter course</string>
+    <string name="year">Year :</string>
+    <string name="course">Course :</string>
+    <string name="some_text_here">Some text here..</string>
+    <string name="yearlevel">Some text here..</string>
+    <string name="subject">Some text here..</string>
+    <string name="todo">TODO</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="oop">OOP</string>
+    <string name="profile">Profile</string>
+    <string name="myname">Name</string>
+    <string name="mycourse">Course</string>
+    <string name="mysection">Section</string>
+    <string name="mybutton">Button</string>
+    <string name="enter_name">enter name</string>
+    <string name="enter_section">enter section</string>
+
+</resources>
