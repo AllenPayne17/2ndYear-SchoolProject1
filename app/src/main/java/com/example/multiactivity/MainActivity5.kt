@@ -1,36 +1,42 @@
 package com.example.multiactivity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
-import com.example.multiactivity.databinding.ActivityMain5Binding
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+
 
 class MainActivity5 : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMain5Binding
-    private lateinit var database : DatabaseReference
-
+    private val db = Firebase.firestore
+    private lateinit var input: EditText
+    private lateinit var button: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMain5Binding.inflate(layoutInflater)
         setContentView(R.layout.activity_main5)
 
-        binding.btnsubmit.setOnClickListener{
+        input = findViewById(R.id.etFullName)
+        button = findViewById(R.id.btnsubmit)
 
-            val fullName = binding.etFullName.text.toString()
-
-            database = FirebaseDatabase.getInstance().getReference("User")
-            val user = User(fullName)
-            database.child(fullName).setValue(user).addOnSuccessListener {
-                binding.etFullName.text.clear()
-
-                Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener{
-                Toast.makeText(this, "Failed Saved", Toast.LENGTH_SHORT).show()
-            }
+        button.setOnClickListener{
+            val post = hashMapOf(
+                "name" to input.text.toString(),
+            )
+            db.collection("post")
+                .add(post)
+                .addOnSuccessListener { documentReference ->
+                    Log.d("Debug", "DocumentSnapshot added with ID: ${documentReference.id}")
+                    Toast.makeText(this, "DocumentSnapshot added with ID: ${documentReference.id}", Toast.LENGTH_LONG).show()
+                }
+                .addOnFailureListener{
+                    Log.w("debug", "Error adding Document")
+                    Toast.makeText(this, "Error adding Document", Toast.LENGTH_SHORT).show()
+                }
         }
     }
 }

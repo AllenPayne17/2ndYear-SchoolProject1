@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "458198957539",
-    "project_id": "fir-crud-16f83",
-    "storage_bucket": "fir-crud-16f83.appspot.com"
+    "project_number": "829080166726",
+    "project_id": "multiactivity-20785",
+    "storage_bucket": "multiactivity-20785.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:458198957539:android:bac3a50eed8da17e4ff4d6",
+        "mobilesdk_app_id": "1:829080166726:android:b4930e3df91b1a77074547",
         "android_client_info": {
           "package_name": "com.example.multiactivity"
         }
       },
       "oauth_client": [
         {
-          "client_id": "458198957539-i2r7d7j6ap143u3uda3mngftaqcjjbr6.apps.googleusercontent.com",
+          "client_id": "829080166726-ff8ps97jfj0f0dbvra6jebk0njsb7gd2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCa11yCr_NusY_4a6drmtIrHvhNErbSnkE"
+          "current_key": "AIzaSyBBF9FFH_Mxk_CdgNCOEdh5WcOtZj3vYl8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "458198957539-i2r7d7j6ap143u3uda3mngftaqcjjbr6.apps.googleusercontent.com",
+              "client_id": "829080166726-ff8ps97jfj0f0dbvra6jebk0njsb7gd2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
