@@ -58,5 +58,7 @@
     <string name="enter_full_name">Enter full Name</string>
     <string name="yourtrulyname">name</string>
     <string name="butttton">Button</string>
+    <string name="age">age</string>
+    <string name="send_to_database">send to Database</string>
 
 </resources>

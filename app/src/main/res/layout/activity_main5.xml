@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="#3A3A3A"
     tools:context=".MainActivity5">
 
     <LinearLayout
@@ -12,7 +13,6 @@
         android:layout_height="729dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,37 +23,57 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="100dp"
             android:gravity="center"
             android:text="@string/firebase_crud_test"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="24sp"
             android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_full_name"
-            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/etFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/yourtrulyname"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColorHint="#52000000"
+            android:textColor="#fff"
+            android:textColorHint="#BCAAA4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/age"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#fff"
+            android:textColorHint="#BCAAA4"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btnsubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="50dp"
-            android:text="@string/butttton" />
+            android:layout_marginRight="50dp"
+            android:onClick="saveToDatabase"
+            android:text="@string/send_to_database"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:backgroundTint="#737171"
+            tools:ignore="UsingOnClickInXml" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

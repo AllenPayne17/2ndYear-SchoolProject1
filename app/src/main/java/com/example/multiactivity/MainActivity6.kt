@@ -26,7 +26,7 @@ class MainActivity6 : AppCompatActivity() {
         vCourse = findViewById(R.id.vtcourse)
         vSection = findViewById(R.id.vtsection)
     }
-    fun clickHere (vew : View){
+    fun clickHere (@Suppress("UNUSED_PARAMETER")view: View?){
         vName.text = name.text
         vCourse.text = course.text
         vSection.text = section.text

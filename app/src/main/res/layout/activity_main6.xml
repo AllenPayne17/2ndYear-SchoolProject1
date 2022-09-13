@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3A3A3A"
     tools:context=".MainActivity6">
 
     <LinearLayout
@@ -26,6 +27,7 @@
                 android:gravity="center"
                 android:padding="40dp"
                 android:text="@string/profile"
+                android:textColor="#fff"
                 android:textSize="25sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -40,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/myname"
-                android:textColor="#000000"
+                android:textColor="#fff"
                 android:textSize="20sp" />
 
             <EditText
@@ -52,7 +54,8 @@
                 android:hint="@string/enter_name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColorHint="#E8E5E5"
+                android:textColor="#fff"
+                android:textColorHint="#BCAAA4"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
@@ -60,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mycourse"
-                android:textColor="#000000"
+                android:textColor="#fff"
                 android:textSize="20sp" />
 
             <EditText
@@ -72,7 +75,8 @@
                 android:hint="@string/enter_course"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColorHint="#E8E5E5"
+                android:textColor="#fff"
+                android:textColorHint="#BCAAA4"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
@@ -81,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_section"
                 android:text="@string/mysection"
-                android:textColor="#000000"
+                android:textColor="#fff"
                 android:textColorHint="#E8E5E5"
                 android:textSize="20sp" />
 
@@ -94,7 +98,8 @@
                 android:hint="@string/enter_section"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColorHint="#E8E5E5"
+                android:textColor="#fff"
+                android:textColorHint="#BCAAA4"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
@@ -104,26 +109,32 @@
                 android:layout_marginTop="20dp"
                 android:onClick="clickHere"
                 android:text="@string/mybutton"
-                tools:ignore="UsingOnClickInXml" />
+                android:textColor="#212121"
+                android:textStyle="bold"
+                app:backgroundTint="#737171"
+                tools:ignore="UsingOnClickInXml,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
             <TextView
                 android:id="@+id/vtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="#fff" />
 
             <TextView
                 android:id="@+id/vtcourse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="#fff" />
 
             <TextView
                 android:id="@+id/vtsection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="#fff" />
         </LinearLayout>
     </LinearLayout>
 
